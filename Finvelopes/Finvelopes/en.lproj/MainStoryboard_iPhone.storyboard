@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard Controller-->
+        <scene sceneID="11">
+            <objects>
+                <viewController title="First" id="2" userLabel="Dashboard Controller" customClass="FINFirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="16">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="V0g-EB-koF">
+                                <items>
+                                    <navigationItem title="Dashboard" id="BEd-qb-6Vx"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCf-uF-yF6">
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="rLI-Wj-ZAj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Net Worth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoU-tb-MpM">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="IPR-10-6OF"/>
+                                    <constraint firstAttribute="height" constant="42" id="MOb-8d-NXp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hCf-uF-yF6" firstAttribute="leading" secondItem="HoU-tb-MpM" secondAttribute="leading" type="default" id="66m-Ev-lNp"/>
+                            <constraint firstItem="V0g-EB-koF" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="DSX-xt-582"/>
+                            <constraint firstItem="V0g-EB-koF" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="HHz-9e-h7e"/>
+                            <constraint firstItem="hCf-uF-yF6" firstAttribute="trailing" secondItem="HoU-tb-MpM" secondAttribute="trailing" type="default" id="P7I-uc-YgE"/>
+                            <constraint firstItem="V0g-EB-koF" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="ar6-3T-8qo"/>
+                            <constraint firstItem="HoU-tb-MpM" firstAttribute="top" secondItem="16" secondAttribute="top" constant="161" id="e4v-tI-saX"/>
+                            <constraint firstItem="hCf-uF-yF6" firstAttribute="top" secondItem="16" secondAttribute="top" constant="204" id="qx8-Ij-kxN"/>
+                            <constraint firstItem="HoU-tb-MpM" firstAttribute="centerX" secondItem="V0g-EB-koF" secondAttribute="centerX" type="default" id="zHX-On-wqz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="190-bank.png" id="7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-844" y="-554"/>
+        </scene>
+        <!--Incoming Controller-->
+        <scene sceneID="13">
+            <objects>
+                <viewController title="Second" id="3" userLabel="Incoming Controller" customClass="FINSecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="17">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="23">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="cQR-IW-sY8"/>
+                                </constraints>
+                                <string key="text">Here is where you will put your incoming transactions, prospectives, and budget what you will receive in the next coming days, weeks, months, and years.</string>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="sfx-oU-sov">
+                                <items>
+                                    <navigationItem title="Incoming" id="M24-Ws-Ksd"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sfx-oU-sov" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="YWh-eG-uST"/>
+                            <constraint firstAttribute="trailing" secondItem="23" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="fR4-wH-Ih7"/>
+                            <constraint firstItem="23" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fzb-YA-SeR"/>
+                            <constraint firstItem="sfx-oU-sov" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="kfE-9T-igG"/>
+                            <constraint firstAttribute="centerY" secondItem="23" secondAttribute="centerY" type="user" id="llH-eD-iPS"/>
+                            <constraint firstItem="sfx-oU-sov" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="uCJ-d8-UMp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Incoming" image="201-incoming.png" id="6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-512" y="278"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="dTl-s7-aBG">
+            <objects>
+                <viewController id="767-5Y-YjB" userLabel="More" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h2h-GJ-pfD">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="IIy-ws-dOm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lzm-vt-roc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40" y="739"/>
+        </scene>
+        <!--Outgoing Controller-->
+        <scene sceneID="LfU-SZ-9ir">
+            <objects>
+                <viewController id="wOU-iG-uzb" userLabel="Outgoing Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fhQ-tT-M59">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="This will display all your outgoing transactions in the form of envelope switching. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oJs-Vw-zAd">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="786-5Y-B6o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="dgB-bV-I17">
+                                <items>
+                                    <navigationItem title="Outgoing" id="NOT-Py-8I7"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oJs-Vw-zAd" firstAttribute="leading" secondItem="fhQ-tT-M59" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ai1-um-X7i"/>
+                            <constraint firstItem="oJs-Vw-zAd" firstAttribute="top" secondItem="fhQ-tT-M59" secondAttribute="top" constant="206" id="BWt-Op-QlU"/>
+                            <constraint firstItem="dgB-bV-I17" firstAttribute="trailing" secondItem="fhQ-tT-M59" secondAttribute="trailing" type="default" id="EZN-Rs-ZcV"/>
+                            <constraint firstItem="dgB-bV-I17" firstAttribute="leading" secondItem="fhQ-tT-M59" secondAttribute="leading" type="default" id="Fzd-CA-mBK"/>
+                            <constraint firstAttribute="trailing" secondItem="oJs-Vw-zAd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="vfr-Vs-ATc"/>
+                            <constraint firstItem="dgB-bV-I17" firstAttribute="top" secondItem="fhQ-tT-M59" secondAttribute="top" type="default" id="yBP-tR-Cvm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Outgoing" image="202-outgoing.png" id="H8E-uE-4pD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RAp-l6-pdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-484" y="1239"/>
+        </scene>
+        <!--Saving Controller-->
+        <scene sceneID="GEt-gS-o7p">
+            <objects>
+                <viewController id="H2J-xn-xXm" userLabel="Saving Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h3s-5o-WBU">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Here you can use this to create envelopes for savings goals that you would like to set for yourself." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iZh-W8-pHl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="Qge-EX-TYj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="b4O-6p-ho7">
+                                <items>
+                                    <navigationItem title="Savings Goals" id="PQ8-qu-afs"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iZh-W8-pHl" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="DeX-CD-P1E"/>
+                            <constraint firstItem="b4O-6p-ho7" firstAttribute="leading" secondItem="h3s-5o-WBU" secondAttribute="leading" type="default" id="E6E-VZ-jFp"/>
+                            <constraint firstItem="iZh-W8-pHl" firstAttribute="top" secondItem="h3s-5o-WBU" secondAttribute="top" constant="206" id="NTJ-Lw-ExA"/>
+                            <constraint firstItem="b4O-6p-ho7" firstAttribute="trailing" secondItem="h3s-5o-WBU" secondAttribute="trailing" type="default" id="pmi-VR-h3h"/>
+                            <constraint firstItem="b4O-6p-ho7" firstAttribute="top" secondItem="h3s-5o-WBU" secondAttribute="top" type="default" id="rYJ-Wc-t6N"/>
+                            <constraint firstItem="iZh-W8-pHl" firstAttribute="leading" secondItem="h3s-5o-WBU" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vla-DF-HSe"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Savings" image="119-piggy-bank.png" id="gPd-zh-iAf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVQ-wD-DP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-854" y="2099"/>
+        </scene>
+        <!--Finvelopes Tabbed-->
+        <scene sceneID="15">
+            <objects>
+                <tabBarController id="4" userLabel="Finvelopes Tabbed" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
+                        <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
+                        <segue destination="wOU-iG-uzb" kind="relationship" relationship="viewControllers" id="DDS-wX-c6a"/>
+                        <segue destination="H2J-xn-xXm" kind="relationship" relationship="viewControllers" id="3ew-8P-1fH"/>
+                        <segue destination="767-5Y-YjB" kind="relationship" relationship="viewControllers" id="J9R-D6-usH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1441" y="776"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="119-piggy-bank.png" width="27" height="20"/>
+        <image name="190-bank.png" width="26" height="22"/>
+        <image name="201-incoming.png" width="19" height="24"/>
+        <image name="202-outgoing.png" width="19" height="24"/>
+    </resources>
+    <classes>
+        <class className="FINFirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FINFirstViewController.h"/>
+        </class>
+        <class className="FINSecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FINSecondViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
